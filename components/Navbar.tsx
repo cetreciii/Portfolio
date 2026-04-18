@@ -1,0 +1,55 @@
+import Link from "next/link";
+
+export function Navbar() {
+  return (
+    <header className="sticky top-0 z-50 border-b border-[rgba(0,0,0,0.06)] bg-white/75 backdrop-blur-md">
+      <nav className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-[15px] font-semibold tracking-tight text-ink"
+        >
+          <span className="inline-block size-6 rounded-md bg-gradient-to-br from-[#E5271C] to-[#F04A40]" />
+          Igor Tarantino
+        </Link>
+        <div className="flex items-center gap-2 sm:gap-6 text-[15px] font-medium text-[rgba(0,0,0,0.7)]">
+          <Link
+            href="/#work"
+            className="hidden sm:inline hover:text-ink transition-colors"
+          >
+            Projects
+          </Link>
+          <Link
+            href="/#articles"
+            className="hidden sm:inline hover:text-ink transition-colors"
+          >
+            Articles
+          </Link>
+          <Link
+            href="/#apps"
+            className="hidden sm:inline hover:text-ink transition-colors"
+          >
+            Published apps
+          </Link>
+          <Link
+            href="/#opensource"
+            className="hidden sm:inline hover:text-ink transition-colors"
+          >
+            Open source
+          </Link>
+          <Link
+            href="/#about"
+            className="hidden sm:inline hover:text-ink transition-colors"
+          >
+            About
+          </Link>
+          <a
+            href="mailto:igor.tar135@gmail.com"
+            className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-[14px] font-semibold text-white transition-colors hover:bg-accent-dark"
+          >
+            Get in touch
+          </a>
+        </div>
+      </nav>
+    </header>
+  );
+}

@@ -1,0 +1,55 @@
+import { getMediumArticles } from "@/lib/medium";
+
+export async function Articles() {
+  const articles = await getMediumArticles("igor.tarantino");
+
+  if (articles.length === 0) return null;
+
+  return (
+    <section id="articles" className="bg-canvas-warm py-24 md:py-32">
+      <div className="mx-auto max-w-[1200px] px-6">
+        <div className="mb-14 flex items-end justify-between gap-8">
+          <div className="max-w-2xl">
+            <span className="inline-block rounded-full bg-accent-soft px-3 py-1 text-[12px] font-semibold tracking-[0.125px] text-accent-text">
+              Articles
+            </span>
+            <h2 className="display-48 mt-4 text-ink">Things I've written</h2>
+            <p className="lead mt-4">
+              And here you can find some articles where I share what I learn when building stuff. Check them out!
+            </p>
+          </div>
+          <div className="hidden text-[13px] font-medium text-ink-mute md:block">
+            {articles.length} articles
+          </div>
+        </div>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {articles.map(({ title, link, thumbnail, pubDate }) => (
+            <a
+              key={link}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col rounded-xl border border-[rgba(0,0,0,0.08)] bg-white overflow-hidden shadow-sm transition hover:shadow-md hover:border-[rgba(0,0,0,0.15)]"
+            >
+              {thumbnail && (
+                <img
+                  src={thumbnail}
+                  alt={title}
+                  className="w-full h-40 object-cover"
+                />
+              )}
+              <div className="flex flex-col gap-1 p-4">
+                <span className="text-[11px] font-semibold uppercase tracking-widest text-accent-text">
+                  Medium · {pubDate}
+                </span>
+                <span className="text-[14px] font-medium leading-snug text-ink group-hover:underline">
+                  {title}
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
