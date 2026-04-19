@@ -1,6 +1,6 @@
 const GITHUB_USERNAME = "cetreciii";
 
-const EXCLUDED_REPOS = ["DICOMViewer", "aHire", "cetreciii.github.io", "DICOMViewerVisionOS2", "Liquid", "Detective_Dino", "Gennit"];
+const EXCLUDED_REPOS = ["DICOMViewer", "aHire", "cetreciii.github.io", "DICOMViewerVisionOS2", "Liquid", "Detective_Dino", "Gennit", "portfolio"];
 
 type Repo = {
   id: number;
