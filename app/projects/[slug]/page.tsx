@@ -94,7 +94,10 @@ function SectionBlock({ s, imgAlt }: { s: { heading?: string; quickRead?: string
         {renderMd(s.body)}
       </div>
       {s.images && s.images.length > 0 && (
-        <div className={`mt-8 grid gap-4 ${s.images.length === 1 ? "" : "sm:grid-cols-2"}`}>
+        <div className={`mt-8 grid gap-4 ${s.images.length === 1 ? "" :
+            s.images.length % 3 === 0 ? "grid-cols-2 sm:grid-cols-3" :
+              "sm:grid-cols-2"
+          }`}>
           {s.images.map((src, i) => (
             <div
               key={i}
@@ -256,7 +259,10 @@ export default async function ProjectPage({
         </div>
 
         {project.descriptionImages && project.descriptionImages.length > 0 && (
-          <div className={`mt-10 grid gap-4 ${project.descriptionImages.length === 1 ? "" : "sm:grid-cols-2"}`}>
+          <div className={`mt-10 grid gap-4 ${project.descriptionImages.length === 1 ? "" :
+              project.descriptionImages.length % 3 === 0 ? "grid-cols-2 sm:grid-cols-3" :
+                "sm:grid-cols-2"
+            }`}>
             {project.descriptionImages.map((src, i) => (
               <div
                 key={i}
