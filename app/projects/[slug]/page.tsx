@@ -17,7 +17,7 @@ export async function generateMetadata(
   const project = getProject(slug);
   if (!project) return {};
   return {
-    title: `${project.title} — Igor`,
+    title: `${project.title} | Igor's Portfolio`,
     description: project.tagline,
   };
 }
@@ -96,8 +96,8 @@ function SectionBlock({ s, imgAlt }: { s: { heading?: string; quickRead?: string
       </div>
       {s.images && s.images.length > 0 && (
         <div className={`mt-8 grid gap-4 ${s.images.length === 1 ? "" :
-            s.images.length % 3 === 0 ? "grid-cols-2 sm:grid-cols-3" :
-              "sm:grid-cols-2"
+          s.images.length % 3 === 0 ? "grid-cols-2 sm:grid-cols-3" :
+            "sm:grid-cols-2"
           }`}>
           {s.images.map((src, i) => (
             <div
@@ -260,11 +260,10 @@ export default async function ProjectPage({
         </div>
 
         {project.descriptionImages && project.descriptionImages.length > 0 && (
-          <div className={`mt-10 grid gap-4 ${
-            project.descriptionImages.length === 1 ? "max-w-sm mx-auto" : 
-            project.descriptionImages.length % 3 === 0 ? "grid-cols-2 sm:grid-cols-3" : 
-            "sm:grid-cols-2"
-          }`}>
+          <div className={`mt-10 grid gap-4 ${project.descriptionImages.length === 1 ? "max-w-sm mx-auto" :
+            project.descriptionImages.length % 3 === 0 ? "grid-cols-2 sm:grid-cols-3" :
+              "sm:grid-cols-2"
+            }`}>
             {project.descriptionImages.map((src, i) => (
               <div
                 key={i}
