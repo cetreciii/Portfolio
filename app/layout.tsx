@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Igor's Portfolio",
   description:
-    "Take a look at my work tha I really hope you'll like!",
+    "My projects and my learning!",
 };
 
 export const viewport = {
