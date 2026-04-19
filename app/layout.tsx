@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Igor — Projects",
+  title: "Igor's Portfolio",
   description:
-    "A portfolio of design and engineering work by Igor. Calm interfaces, considered systems.",
+    "Take a look at my work tha I really hope you'll like!",
 };
 
 export const viewport = {
