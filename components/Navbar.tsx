@@ -12,36 +12,36 @@ export function Navbar() {
           Igor Tarantino
         </Link>
         <div className="flex items-center gap-2 sm:gap-6 text-[15px] font-medium text-[rgba(0,0,0,0.7)]">
-          <Link
-            href="/#work"
+          <a
+            href="#work"
             className="hidden sm:inline hover:text-ink transition-colors"
           >
             Projects
-          </Link>
-          <Link
-            href="/#articles"
+          </a>
+          <a
+            href="#articles"
             className="hidden sm:inline hover:text-ink transition-colors"
           >
             Articles
-          </Link>
-          <Link
-            href="/#apps"
+          </a>
+          <a
+            href="#apps"
             className="hidden sm:inline hover:text-ink transition-colors"
           >
             Published apps
-          </Link>
-          <Link
-            href="/#opensource"
+          </a>
+          <a
+            href="#opensource"
             className="hidden sm:inline hover:text-ink transition-colors"
           >
             Open source
-          </Link>
-          <Link
-            href="/#about"
+          </a>
+          <a
+            href="#about"
             className="hidden sm:inline hover:text-ink transition-colors"
           >
             About
-          </Link>
+          </a>
           <a
             href="mailto:igor.tar135@gmail.com"
             className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-[14px] font-semibold text-white transition-colors hover:bg-accent-dark"
