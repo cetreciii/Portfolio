@@ -36,7 +36,7 @@ export function Footer() {
             Medium
           </a>
           <a
-            href="/cv/CV_Igor_Tarantino.pdf"
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/cv/CV_Igor_Tarantino.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-ink"
