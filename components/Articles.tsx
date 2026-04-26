@@ -13,7 +13,7 @@ export async function Articles() {
             <span className="inline-block rounded-full bg-accent-soft px-3 py-1 text-[12px] font-semibold tracking-[0.125px] text-accent-text">
               Articles
             </span>
-            <h2 className="display-48 mt-4 text-ink">Things I've written</h2>
+            <h2 className="display-48 mt-4 text-ink">Things I've <span className="text-accent">written</span></h2>
             <p className="lead mt-4">
               And here you can find some articles where I share what I learn when building stuff. Check them out!
             </p>

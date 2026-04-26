@@ -52,7 +52,7 @@ export async function OpenSource() {
             <span className="inline-block rounded-full bg-accent-soft px-3 py-1 text-[12px] font-semibold tracking-[0.125px] text-accent-text">
               Open source
             </span>
-            <h2 className="display-48 mt-4 text-ink">Things I&apos;ve shared</h2>
+            <h2 className="display-48 mt-4 text-ink">Things I&apos;ve <span className="text-accent">shared</span></h2>
             <p className="lead mt-4">
               Open source projects! Feel free to contribute as you like! There are also some sample codes
               that you can clone and use for your own projects!

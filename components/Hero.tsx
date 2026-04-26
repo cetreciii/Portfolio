@@ -56,12 +56,6 @@ export function Hero() {
               →
             </span>
           </a>
-          <a
-            href="mailto:igor.tar135@gmail.com"
-            className="inline-flex items-center gap-2 text-[15px] font-semibold text-ink underline-offset-4 hover:underline"
-          >
-            Say hello
-          </a>
         </motion.div>
       </div>
     </section>

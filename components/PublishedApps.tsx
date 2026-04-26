@@ -43,7 +43,7 @@ export async function PublishedApps() {
             <span className="inline-block rounded-full bg-accent-soft px-3 py-1 text-[12px] font-semibold tracking-[0.125px] text-accent-text">
               Published apps
             </span>
-            <h2 className="display-48 mt-4 text-ink">Things I&apos;ve published</h2>
+            <h2 className="display-48 mt-4 text-ink">Things I&apos;ve <span className="text-accent">published</span></h2>
             <p className="lead mt-4">
               Those projects made it to the App Store! Please, let me know what you think about
               those, feedback is the best thing could happen to a solo developer like me!

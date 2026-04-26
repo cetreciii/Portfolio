@@ -13,6 +13,12 @@ export function Navbar() {
         </Link>
         <div className="flex items-center gap-2 sm:gap-6 text-[15px] font-medium text-[rgba(0,0,0,0.7)]">
           <a
+            href="#about"
+            className="hidden sm:inline hover:text-ink transition-colors"
+          >
+            About me
+          </a>
+          <a
             href="#work"
             className="hidden sm:inline hover:text-ink transition-colors"
           >
@@ -36,18 +42,12 @@ export function Navbar() {
           >
             Open source
           </a>
-          <a
-            href="#about"
-            className="hidden sm:inline hover:text-ink transition-colors"
-          >
-            About
-          </a>
-          <a
-            href="mailto:igor.tar135@gmail.com"
+          <Link
+            href="/contact"
             className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-[14px] font-semibold text-white transition-colors hover:bg-accent-dark"
           >
-            Get in touch
-          </a>
+            ✉️ Send a message
+          </Link>
         </div>
       </nav>
     </header>
